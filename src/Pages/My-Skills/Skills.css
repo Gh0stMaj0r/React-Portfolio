@@ -1,0 +1,236 @@
+
+.skills {
+    height: 110vh;
+    background-color: #0e1725;
+}
+
+h2 {
+    color: white;
+    margin-top: -1vh;
+    margin-bottom: -2vh;
+}
+
+.skills2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills3 {
+    color: white;
+    font-size: 2rem;
+}
+
+h4 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+}
+
+p {
+    width: 35vw;
+    font-size: 1.8rem;
+}
+
+/* SKILLBAR */
+.coding-logos {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-bottom: 1vh;
+}
+
+.code-logos {
+    width: 6vw;
+}
+
+.wrapper{
+    width: 40%;
+    min-width: 590px;
+    left: 50%;
+    top: 50%;
+}
+
+.container h2{
+    font-size: 2.5rem;
+}
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+span {
+    color: white;
+}
+
+.bar{
+    position: relative;
+    border: 2px solid #0d96e0;
+    border-radius: 20px;
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+
+.skillbar:not(:last-child){
+    margin-bottom: 30px;
+}
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+#javascript-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 50%;
+    }
+}
+
+#jQuery-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 20%;
+    }
+} 
+
+#react-bar{
+    animation: react-fill 2s forwards;
+}
+@keyframes react-fill{
+    100%{
+        width: 40%;
+    }
+} 
+
+#photoshop-bar{
+    animation: photoshop-fill 2s forwards;
+}
+@keyframes photoshop-fill{
+    100%{
+        width: 40%;
+    }
+} 
+
+#xd-bar{
+    animation: xd-fill 2s forwards;
+}
+@keyframes xd-fill{
+    100%{
+        width: 60%;
+    }
+} 
+
+.circle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 20vh;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .code-logos {
+        width: 18vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .skills {
+        height: 190vh;
+    }
+    
+    .skills2 {
+        flex-direction: column;
+    }
+
+    p {
+        width: 80vw;
+    }
+
+    .code-logos {
+        width: 20vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .skills {
+        height: 200vh;
+    }
+    
+    .skills2 {
+        flex-direction: column;
+    }
+
+    .skills3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: -1vh;
+    }
+
+    h4 {
+        width: 80vw;
+        gap: 2.5vw;
+    }
+
+    p {
+        width: 80vw;
+        font-size: 1.2rem;
+        margin-top: -1vh;
+    }
+
+    .code-logos {
+        width: 20vw;
+    }
+
+    .circle {
+        display: flex;
+        justify-content: center;
+        gap: 10vw;
+    }
+
+}
+
+/* 414px devices */
+@media only screen and (max-width: 414px) {
+    .skills {
+        height: 220vh;
+    }
+}

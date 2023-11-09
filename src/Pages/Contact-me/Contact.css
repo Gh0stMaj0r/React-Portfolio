@@ -1,0 +1,151 @@
+.contact {
+    height: 100vh;
+    background-color: #0e1725;
+}
+
+.contact-form {
+    display: grid;
+    place-content: center;
+    padding: 20px;
+    width: 100vw;
+}
+
+.contact-form2 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #0a0a0a;
+    box-shadow: 2px 2px 13px 5px rgba(0,0,0,0.75);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+input {
+    width: 15vw;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#subject {
+    width: 32.5vw;
+}
+
+textarea {
+    width: 33vw;
+    height: 12vh;
+    resize: vertical;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.form-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vw;
+    font-size: 30px;
+}
+
+.form-link {
+    color: white;
+}
+
+.submit-button {
+    background-color: #0d96e0;
+    width: 5vw;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .contact-form {
+        padding: 0;
+    }
+
+    .contact-form2 {
+        width: 70vw;
+        height: 60vh;
+    }
+
+    .form-row {
+        gap: 3vw;
+    }
+
+    input {
+        width: 30vw;
+    }
+
+    #subject {
+        width: 67vw;
+    }
+
+    textarea {
+        width: 67vw;
+    }
+
+    .form-links {
+        gap: 2vw;
+        font-size: 40px;
+    }
+
+    .submit-button {
+        width: 20vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contact-form {
+        padding: 0;
+    }
+
+    .contact-form2 {
+        width: 70vw;
+    }
+
+    .form-row {
+        gap: 4vw;
+    }
+
+    input {
+        width: 25vw;
+    }
+
+    #subject {
+        width: 60vw;
+    }
+
+    textarea {
+        width: 60vw;
+    }
+
+    .form-links {
+        gap: 2vw;
+    }
+
+    .submit-button {
+        width: 20vw;
+    }
+}

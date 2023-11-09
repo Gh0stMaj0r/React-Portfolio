@@ -1,0 +1,133 @@
+.footer {
+    background-color: #0a0a0a;
+    height: 40vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content {
+    width: 20vw;
+    color: white;
+}
+
+hr {
+    height: 5px;
+    background-color: white;
+}
+
+.links-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 25px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    gap: 1vw;
+    font-size: 40px;
+    margin-top: 2vh;
+}
+
+.footer-copyright {
+    margin-left: -3vw;
+    text-align: center;
+}
+
+.copyright {
+    transform: translate(0, 1.5vh);
+    width: 20vw;
+}
+
+.rights {
+    font-size: 20px;
+    width: 20vw;
+}
+
+.social-link {
+    color: white;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .copyright {
+        width: 30vw;
+    }
+
+    .rights {
+        width: 30vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: 85vh;
+    }
+
+    .links-column {
+        font-size: 18px;
+    }
+
+    .copyright {
+        width: 40vw;
+    }
+
+    .rights {
+        width: 40vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .contact-info {
+        margin-top: 4vh;
+    }
+
+    .links-column {
+        font-size: 18px;
+        margin-bottom: 4vh;
+        width: 5vw;
+    }
+
+    .social {
+        gap: 5vw;
+    }
+
+    .copyright {
+        width: 50vw;
+    }
+
+    .rights {
+        width: 50vw;
+    }
+}
+
+/* 414px devices */
+@media only screen and (max-width: 414px) {
+    .footer {
+        height: 85vh;
+    }
+
+    .links-column {
+        width: 100vw;
+    }
+}
